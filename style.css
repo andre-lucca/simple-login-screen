@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    font-size: 0;
+}
+
+main>div {
+    display: inline-block;
+    height: 100%;
+}
+
+.left-side {
+    width: 650px;
+    background-image: linear-gradient(50deg, #B37A45, #c0eb87);
+}
+
+.main-container {
+    position: relative;
+    float: right;
+    width: 550px;
+    height: 100%;
+
+    background-color: white;
+}
+
+.main-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+    padding: 30px;
+
+    font-size: 14px;
+
+    width: 450px;
+    height: 600px;
+}
+
+.main-content>h1 {
+    color: #788046;
+    margin-top: 35px;
+}
+
+.main-content>h3 {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.main-content>form {
+    width: 100%;
+}
+
+label {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+a:visited {
+    color: #788046;
+}
+
+a:hover {
+    color: #585e33;
+}
+
+#email,
+#password {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    font-size: large;
+
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+#email:focus,
+#password:focus {
+    outline-color: #BBC671;
+}
+
+#forgot-password {
+    float: right;
+}
+
+#button-submit {
+    width: 125px;
+
+    margin-bottom: 30px;
+    padding: 10px;
+
+    color: white;
+    background-color: #788046;
+
+    font-size: medium;
+
+    border-radius: 50px;
+    border: none;
+}
+
+#button-submit:hover {
+    filter: brightness(0.9);
+    transition: all 200ms linear;
+
+    cursor: pointer;
+}
+
+p {
+    color: #555;
+}
+
+.right-image {
+    filter: brightness(0.7);
+    background: url('./assets/children-on-computer.jpg') no-repeat center;
+    background-size: cover;
+    width: calc(100% - 650px);
+}
